@@ -1,4 +1,3 @@
-  
 # Funcion suma  
 def suma(num1, num2): 
     return num1 + num2 
@@ -72,8 +71,41 @@ elif opcion == '4':
 elif opcion == '5':
     print(numero_1, "%", numero_2,"=", modulo(numero_1,numero_2))
 
-elif opcion == '6':
-    print()
+if opcion=='6':
+   print("¿Que funcion desean utilizar? \n"
+        " 1. Seno (Radianes) \n"
+        " 2. Coseno (Radianes) \n"
+        " 3. Tangente (Radianes) \n"
+        " 4. Aseno (Grados) \n"
+        " 5. Acoseno (Grados) \n"
+        " 6. Atangente (Grados) \n")
+
+res = int(input("Seleccione opcion: 1, 2, 3, 4, 5, 6: "))
+x= float(input("Ingrese numero: "))
+
+if res == '1':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", sin(x))
+    
+elif res == '2':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", cos(x))
+    
+elif res == '3':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", tan(x))
+    
+elif res == '4':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", aseno(x))
+    
+elif res == '5':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", acoseno(x))
+
+elif res == '6':
+    x= float(input("Ingrese numero: "))
+    print("El resultado es = ", atangente(x))
 
 else: 
     print("Opcion invalida") 
